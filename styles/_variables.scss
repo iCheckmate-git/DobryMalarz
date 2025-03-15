@@ -1,41 +1,18 @@
 @use 'helpers' as *;
 
 :root {
-  --color-light: #FFFFFF;
+  --border: #00070e;
+	--typography-black: #00070e;
+	--typography-white: #fff;
+	--typography-blue: #579fff;
+	--typography-red: #ff5c4e;
+	--typography-grey: #969899;
+	--neutral-white: #fff;
+	--neutral-blue: #579fff;
+	--neutral-light-blue: #f2f7ff;
+	--accent-red: #ff5c4e;
+	--accent-light-blue2: #d1e3ff;
 
-  --color-dark: #141414;
-  --color-dark-10: #1A1A1A;
-  --color-dark-15: #262626;
-  --color-dark-20: #333333;
-  --color-dark-40: #666666;
-
-  --color-gray-50: #7E7E81;
-  --color-gray-60: #98989A;
-
-  --color-accent: #FFD11A;
-  --color-red: #FF5500;
-
-  --gradient: linear-gradient(
-    45deg,
-    var(--color-dark-15) 64%,
-    var(--color-accent) 136%
-  );
-
-  --border: #{rem(1)} solid var(--color-dark-15);
-
-  --shadow: 0 0 0 #{rem(3)} #191919;
-
-  --font-family-base: 'Inter', sans-serif;
-  --font-family-accent: 'Kumbh Sans', sans-serif;
-
-  --container-width: #{rem(1600)};
-  --container-padding-x: #{rem(16)};
-
-  --transition-duration: 0.2s;
-
-  --100vw: calc(100vw - var(--scrollbar-width));
-
-  @include laptop {
-    --container-width: #{rem(1280)};
-  }
+  --font-family: "Gilroy", sans-serif;
+  --second-family: "Ink Free", sans-serif;
 }

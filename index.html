@@ -4,57 +4,605 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Start Generation Here -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIwE+" crossorigin="anonymous">
-  <!-- End Generation Here -->
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Document</title>
 </head>
 <body>
-<div class="row">
-  <div class="col-md-4" style="margin-bottom: 30px;">
-    <div class="card h-100">
-      <img src="https://picsum.photos/200/300" alt="Product Image" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Product Name</h5>
-        <p class="card-text">Price: $9.99</p>
-        <button class="btn btn-primary">Заказать</button>
+  <header class="header">
+    <div class="header__navigation">
+      <div class="container">
+        <a href="" class="logo"><img src="./img/logo.svg" alt="DobryMalarez"></a>
+        <ul class="">
+          <li><a href="">O nas</a></li>
+          <li><a href="">Gwarancja</a></li>
+          <li><a href="">Konserwacja</a></li>
+          <li><a href="">Realizacje</a></li>
+          <li><a href="">Jak pracujemy</a></li>
+          <li><a href="">Kontakt</a></li>
+        </ul>
+        <a href="#" class="btn modal_btn">
+          Zamów wycenę
+          <img src="./img/phone-white.svg" alt="">
+        </a>
+        <a href="#" class="mobile_menu">
+          <span></span><span></span><span></span>
+        </a>
       </div>
     </div>
-  </div>
-  <div class="col-md-4" style="margin-bottom: 30px;">
-    <div class="card h-100">
-      <img src="https://picsum.photos/200/301" alt="Product Image" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Product Name 2</h5>
-        <p class="card-text">Price: $12.99</p>
-        <button class="btn btn-primary">Заказать</button>
+    <div class="header__hero">
+      <div class="container">
+        <div class="box">
+          <div class="box-item">
+            <h1>Profesjonalny malarz</h1>
+            <span class="subtitle">w Warszawie <br>i okolicach</span>
+            <a href="#" class="btn">Zamów bezpłatną wycenę</a>
+          </div>
+          <img src="./img/header_bg.jpg" class="bg" alt="">
+          <div class="box-item"></div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="content">
+          <span class="title">Nasi malarze zrobią to <br> naprawdę dobrze!</span>
+          <p>Zadzwoń do nas:</p>
+          <a href="tel:+48 516 148 288">+48 516 148 288</a>
+        </div>
+        <img src="./img/banner.svg" alt="">
       </div>
     </div>
-  </div>
-  <div class="col-md-4" style="margin-bottom: 30px;">
-    <div class="card h-100">
-      <img src="https://picsum.photos/200/302" alt="Product Image" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">Product Name 3</h5>
-        <p class="card-text">Price: $7.99</p>
-        <button class="btn btn-primary">Заказать</button>
-      </div>
-    </div>
-  </div>
-</div>
+  </header>
 
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-  </script>
+  <main>
+
+    <section class="block_about">
+      <div class="container">
+        <div class="box">
+          <div class="box-item">
+            <img src="./img/about_us_block.svg" alt="">
+          </div>
+          <div class="box-item">
+            <h2>O nas</h2>
+            <span class="subtitle">Jesteśmy zespołem malarzy, który łączy jedno – miłość do pięknych wnętrz.</span>
+            <p>Działamy od 2017 roku a w swoim dorobku mamy ponad 100 realizacji wykończenia mieszkań, domów oraz biur i pomieszczeń przemysłowych.</p>
+            <div class="numbers">
+              <div class="numbers-item">
+                <span>8<small>lat</small></span>
+                <p>na rynku</p>
+              </div>
+              <div class="numbers-item">
+                <span>100<small>+</small></span>
+                <p>realizacji </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ten_advantages">
+      <div class="container">
+        <h2 class="custom">
+          <span class="number">10</span>
+          <div class="text">
+            <span class="red">cech</span>
+            dobrego malarza
+            <small>którymi kieruje się nasz zespół</small>
+          </div>
+        </h2>
+        <div class="grid">
+          <div class="grid-item">
+            <img src="./img/ten-1.svg" alt="">
+            <div class="content">
+              <h3>Doświadczony profesjonalista</h3>
+              <p>Nasz zespół malarzy posiada bogate doświadczenie w realizacji różnorodnych projektów malarskich – od malowania mieszkań po remontowanie biur i pomieszczeń przemysłowych.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-2.svg" alt="">
+            <div class="content">
+              <h3>Dba o odpowiednie przygotowanie miejsca pracy</h3>
+              <p>Przed rozpoczęciem prac wykończeniowych nasi malarze dokładnie zabezpieczają podłogi, okna, drzwi, meble oraz wszystkie elementy, które mogłyby zostać uszkodzone podczas pracy.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-3.svg" alt="">
+            <div class="content">
+              <h3>Zostawia po sobie czystość i porządek</h3>
+              <p>Po zakończeniu prac malarskich usuwamy folię ochronną oraz taśmę malarską z podłóg, okien, drzwi i mebli, dokładnie sprzątamy miejsce pracy, usuwając farbę i kurz.
+                <strong>Dzięki temu nie musisz robić tego samodzielnie ani zatrudniać firmy sprzątającej, oszczędzając czas i zmniejszając koszty.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-4.svg" alt="">
+            <div class="content">
+              <h3>Z <strong>“Dobrym malarzem”</strong> jesteś zabezpieczony przed nieprzewidzianymi sytuacjami</h3>
+              <p>Wszystkie prace wykonywane przez nas są <span class="blue">objęte ubezpieczeniem remontowym</span> od firmy Unilink. Możesz więc bez obaw powierzyć naszemu zespołowi swoje mieszkanie czy dom i nie martwić się o bezpieczeństwo mienia.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-5.svg" alt="">
+            <div class="content">
+              <h3>Nie przychodzi do pracy pod wpływem alkoholu</h3>
+              <p>Nie jest tajemnicą, że w branży budowlanej zdarzają się różne osoby. Czasem jest tak, że ktoś przychodzi do pracy pod wpływem alkoholu lub w ogóle się nie pojawił z powodu picia poprzedniego dnia.  Jednak takie osoby nie mają wstępu do naszej firmy.
+               </p>
+              <span class="blue">Nie tolerujemy w żadnym stopniu spożywania alkoholu w czasie pracy ani przychodzenia na nią w stanie nietrzeźwym przez żadnego z naszych pracowników</span>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-6.svg" alt="">
+            <div class="content">
+              <h3>Nigdy nie próbuje oszukać klienta</h3>
+              <p>Zawsze uczciwie oceniamy zakres prac, jakie mamy do wykonania i nie zawyżamy ich kosztów.  Równocześnie nie możemy pracować za stawki niższe od rynkowych. Odpowiednie wykonanie prac wymaga bowiem zarówno poświęcenia większej ilości czasu, jak i profesjonalizmu, który nabywa się wraz ze wzrostem doświadczenia.  
+              </p>
+              <a href="/">Rozwiń
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.30693 7.71217L0.287337 1.6777C-0.0957794 1.29383 -0.0957794 0.671462 0.287337 0.287783C0.670113 -0.0959273 1.29094 -0.0959273 1.67368 0.287783L7.0001 5.62736L12.3263 0.287938C12.7093 -0.0957723 13.33 -0.0957723 13.7128 0.287938C14.0957 0.671648 14.0957 1.29399 13.7128 1.67785L7.69312 7.71233C7.50164 7.90418 7.25095 8 7.00013 8C6.74919 8 6.49832 7.90399 6.30693 7.71217Z" fill="#FF5C4E" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-7.svg" alt="">
+            <div class="content">
+              <h3>Ma w swojej ofercie nie tylko prace wykończeniowe mieszkań i domów, ale także biur i lokali użytkowych</h3>
+              <p>Poza malowaniem mieszkań i domów jednorodzinnych, oferujemy także remonty biur oraz przestrzeni handlowych w Warszawie i okolicach.</p>
+              <a href="" class="btn">Zabacz nasze realizacje</a>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-8.svg" alt="">
+            <div class="content">
+              <h3>Zawsze pracuje zgodnie z umową</h3>
+              <p>Podpisana umowa stanowi gwarancję dla obu stron. Dla nas oznacza pewność otrzymania zapłaty za wykonaną pracę w umówionej wysokości. Klient zyskuje pewność, że prace będą realizowane solidnie, w terminie, za ustaloną kwotę, a w razie potrzeby wszelkie niezbędne poprawki zostaną wykonane nawet po zakończeniu remontu.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-9.svg" alt="">
+            <div class="content">
+              <h3>Nie wymaga zaliczek ani przedpłat za prace, których jeszcze nie wykonał</h3>
+              <p>Czasem zdarza się, że nieuczciwi wykonawcy, nawet jeszcze nie zaczynając pracy, od razu domagają się dużych zaliczek.  Bywa też, że po otrzymaniu żądanej kwoty po prostu „znikają” na jakiś czas, a pojawiają się dopiero wtedy, gdy zaliczka zostanie już wydana na alkohol albo nie ma już z nimi żadnego kontaktu.  </p>
+                <a href="/">Rozwiń
+                  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.30693 7.71217L0.287337 1.6777C-0.0957794 1.29383 -0.0957794 0.671462 0.287337 0.287783C0.670113 -0.0959273 1.29094 -0.0959273 1.67368 0.287783L7.0001 5.62736L12.3263 0.287938C12.7093 -0.0957723 13.33 -0.0957723 13.7128 0.287938C14.0957 0.671648 14.0957 1.29399 13.7128 1.67785L7.69312 7.71233C7.50164 7.90418 7.25095 8 7.00013 8C6.74919 8 6.49832 7.90399 6.30693 7.71217Z" fill="#FF5C4E" />
+                  </svg>
+                </a>
+              </div>
+          </div>
+          <div class="grid-item">
+            <img src="./img/ten-10.svg" alt="">
+            <div class="content">
+              <h3>Udziela gwarancji na swoje usługi</h3>
+              <p>W ramach umowy oferujemy gwarancję, która obejmuje wszelkie niezbędne poprawki przez dwa miesiące po zakończeniu prac, jeśli zajdzie taka potrzeba.  Dotyczy to zarówno sytuacji, gdy poprawki wynikają z naszej winy, jak i wówczas, gdy przykładowo ściany zostaną zabrudzone lub uszkodzone... </p>
+              <a href="/">Rozwiń
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.30693 7.71217L0.287337 1.6777C-0.0957794 1.29383 -0.0957794 0.671462 0.287337 0.287783C0.670113 -0.0959273 1.29094 -0.0959273 1.67368 0.287783L7.0001 5.62736L12.3263 0.287938C12.7093 -0.0957723 13.33 -0.0957723 13.7128 0.287938C14.0957 0.671648 14.0957 1.29399 13.7128 1.67785L7.69312 7.71233C7.50164 7.90418 7.25095 8 7.00013 8C6.74919 8 6.49832 7.90399 6.30693 7.71217Z" fill="#FF5C4E" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dobry">
+      <div class="container">
+        <div class="dobry__box">
+          <div class="dobry__box-item">
+            <img src="./img/man-blue.svg" alt="">
+          </div>
+          <div class="dobry__box-item">
+            <h2>Jak <span class="red">“Dobry malarz”</span> zapewnia gwarancję?</h2>
+            <div class="content">
+              <span class="title">Po zakończeniu wszystkich prac możesz zatrzymać u siebie ostatnie 10% od całkowitej kwoty przez okres dwóch miesięcy.</span>
+              <p>To będzie Twoja gwarancja i nasza motywacja do wykonania wszelkich niezbędnych poprawek, jeśli zajdzie taka potrzeba – nawet po zakonczeniu remontu.</p>
+            </div>
+            <div class="content">
+              <span class="title">Po upływie dwóch miesięcy lub kiedy wykonamy niezbędne poprawki i będziesz w pełni zadowolony z wykonanych przez nas usług, zapłacisz nam ostatnie 10% *, które zatrzymałeś.</span>
+              <blockquote>
+                Jeśli usuwaliśmy zabrudzenia lub uszkodzenia, które nie były wynikiem naszej winy, będzie konieczna dopłata do tych 10%, odpowiadająca liczbie godzin, które nasz fachowiec poświęci na poprawki.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__grid-title">
+          <h2>Chcesz dłuższej gwarancji <span class="red">niż 2 miesiące?</span></h2>
+          <span class="subtitle">
+            W takiej sytuacji proponujemy zawarcie <span class="red">umowy na usługę konserwacyjną</span> w formie abonamentu
+          </span>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__grid-item">
+            <span class="title">Dzięki tej</span>
+            <p>umowie zyskujesz okresowe serwisowanie pomieszczeń przez naszego malarza w przypadku zabrudzeń lub uszkodzeń powierchni ścian lub sufitów</p>
+          </div>
+          <div class="about__grid-item">
+            <div class="box">
+              <div class="box-item">
+                <span class="number">
+                    5
+                  <small>lat</small>
+                </span>
+                <p>okres obowiązywania umowy na konserwację</p>
+              </div>
+              <div class="box-item">
+                <span class="title">Zadzwoń do nas</span>
+                <p>i umów się na dogodny termin wizyty naszego fachowca</p>
+                <a href="tel:+48 516 148 288" class="btn">
+                  <img src="./img/phone-white.svg" alt="">
+                  +48 516 148 288
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about__grid-item">
+            <span class="title">Każdego roku przysługuje Ci określona liczba godzin</span>
+            <p>które możesz wykorzystać na prace malarskie, takie jak poprawki malowania po zabrudzeniach lub naprawy uszkodzeń na ścianach i sufitach</p>
+          </div>
+        </div>
+      </div>
+      <div class="ditails_info">
+        <div class="container">
+          <div class="ditails_info-item">
+            <h2>Dlaczego to dla Ciebie korzystne?</h2>
+            <span class="subtitle">Zakup abonamentu na konserwację ścian i sufitów to znacznie tańsze rozwiązanie niż każdorazowe poszukiwanie nowych fachowców, gdy stan ścian lub sufitów się pogorszy.</span>
+            <p>W takim przypadku unikniesz problemów ze znalezieniem specjalistów, którzy często odmawiają podjęcia się realizacji drobnych poprawek, uznając to za nieopłacalne.</p>
+          </div>
+          <div class="ditails_info-item">
+            <img src="./img/about_ditails.svg" alt="">
+          </div>
+        </div>
+        <img src="./img/valik.svg" alt="" class="styck">
+      </div>
+    </section>
+    <secttion class="gallery">
+      <div class="container">
+        <h2>Nasze realizacje</h2>
+        <div class="gallery_navigation">
+          <a class="active" href="">Mieszkania i domy</a>
+          <a href="">Biura i lokale użytkowe</a>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__grid-item two-column active">
+            <div class="grid-box rows">
+              <div class="grid-box-item">
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-box-item">
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-box rows">
+              <div class="grid-box-item">
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-box-item">
+                <div class="content" style="background-image: url(./img/gallerybg.jpg);">
+                  <div class="content-box">
+                    <span class="title">Huawei Polska</span>
+                    <p>w wieżowcu Widok Towers przeprowadzaliśmy prace wykończeniowe powierzchni biurowych od parteru po 9. piętro dla Urzędu m.st. Warszaw</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a href="/" class="see_all">Zobacz więcej</a>
+        <div class="gallery__addantional">
+          <div class="box">
+            <div class="box-item">
+              <img src="./img/addantional.svg" alt="">
+            </div>
+            <div class="box-item">
+              <div class="quote">A jeśli kiedykolwiek odwiedzisz Kancelarię Prezesa Rady Ministrów Polski</div>
+              <div class="text">
+                przy Alejach Ujazdowskich 1/3, zobaczysz tam również naszą pracę. <br>To właśnie my remontowaliśmy pomieszczenia na 2. i 3. piętrze Kancelarii Prezesa Rady Ministrów, kiedy funkcję premiera pełnił Mateusz Morawiecki.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secttion>
+    <section class="step">
+      <div class="container">
+        <h2 class="custom">
+          <span class="number">10</span>
+          <div class="text">
+            <span class="red">etapów współpracy</span>
+            z naszą firmą
+          </div>
+        </h2>
+
+        <div class="grid">
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="./img/1.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Kontaktujesz się z nami</h3>
+              <p>telefonicznie <a href="tel:">+48 516 148 288</a>
+                lub zostawiając zapytanie tutaj</p>
+              <a href="#" class="btn">Napisz do nas</a>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/2.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Nasz specjalista przyjeżdża pod wskazany adres</h3>
+              <p>aby dokładnie poznać Twoje potrzeby i oczekiwania. Ocenia zakres prac, oblicza koszty oraz przygotowuje ofertę cenową</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/3.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Jeśli akceptujesz naszą ofertę, przygotowujemy umowę</h3>
+              <p>w której szczegółowo opisujemy zakres prac, ich wartość, kwestię materiałów, terminy realizacji, harmonogram płatności oraz warunki i okres gwarancji</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/4.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Po podpisaniu umowy dokonujesz płatności</h3>
+              <p>za materiały potrzebne do wykonania usługi (farby, szpachle itd.) lub otrzymujesz listę materiałów do samodzielnego zakupu</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/5.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Rozpoczynamy realizację zlecenia</h3>
+              <p>po otrzymaniu płatności na materiały lub po dostarczeniu materiałów przez Ciebie</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/6.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Po wykonaniu 25% prac wystawiamy fakturę na 20% </h3>
+              <p>Na etapie około 25% wykonania zlecenia wystawiamy fakturę na 20% jego całkowitej wartości</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/7.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Po wykonaniu 50% zlecenia wystawiamy fakturę na kolejne 20%</h3>
+              <p>Po ukończeniu mniej więcej połowy projektu wystawiamy kolejną fakturę do opłacenia – opiewającą na kolejne 20% wartości zlecenia</p>
+
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/8.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Po zakończeniu 100% prac wystawiamy fakturę jeszcze na 50%</h3>
+              <p>Po zakończeniu całości prac podpisujesz protokół odbioru, a my wystawiamy trzecią fakturę do opłacenia – na 50% całkowitej wartości</p>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/9.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>W ciągu 2 miesięcy dokonujemy niezbędnych poprawek</h3>
+              <p>jeśli zajdzie taka potrzeba, po czym wpłacasz ostatnie 10%* od wartości umowy</p>
+              <blockquote>Jeśli niezbędne będzie usuwanie zabrudzeń lub uszkodzeń, które nie są wynikiem naszych błędów, konieczna będzie dodatkowa opłata za czas poświęcony na ich naprawę</blockquote>
+            </div>
+          </div>
+
+          <div class="step__item">
+            <div class="icon">
+              <img src="img/10.svg" alt="">
+            </div>
+            <div class="content">
+              <h3>Po remoncie możesz skorzystac z usługi konserwacji pomieszczeń, które remontowaliśmy</h3>
+              <p>Jeśli chcesz, aby pomalowane powierzchnie pozostały w dobrym stanie przez długi czas po remoncie, proponujemy zawarcie dodatkowej umowy na usługę konserwacji pomieszczeń, które remontowaliśmy.
+                <strong>W takim przypadku nasza współpraca potrwa kolejne 5 lat, podczas których zadbamy o utrzymanie Twoich pomieszczeń w doskonałym stanie</strong></p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section class="form_order">
+      <div class="container">
+        <div class="form_order-box">
+          <h2>Chcesz mieć nie tylko dobrze pomalowane wnętrze, ale też doświadczenie udanej współpracy w przyjaznej atmosferze?</h2>
+          <span class="subtitle">W takim razie zadzwoń do <span class="red">"Dobrego Malarza":</span>          </span>
+          <span><span class="red">+48 516 148 288</span> lub</span>
+          <div class="form_order-areaForm">
+            <span class="title">Napisz do nas</span>
+            <form action="">
+              <div class="flex">
+                <input type="text" placeholder="Telefon">
+                <input type="text" placeholder="Adres email">
+              </div>
+              <textarea name="" id="" placeholder="Co należy pomalować?"></textarea>
+              <button class="btn">Napisz do nas</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__box">
+          <div class="contacts__box-item">
+            <h2>Kontakty
+              <span class="red">“Dobrego Malarza”</span></h2>
+              <div class="content-item">
+                <img src="./img/phone.svg" alt="">
+                <div class="content-item-box">
+                  <span class="title">Telefon:</span>
+                  <a href="tel:+48 516 148 288">+48 516 148 288</a>
+                </div>
+              </div>
+              <div class="content-item">
+                <img src="./img/mail.svg" alt="">
+                <div class="content-item-box">
+                  <span class="title">E-mail:</span>
+                  <a href="tel:biuro@dobrymalarz.pl">biuro@dobrymalarz.pl</a>
+                </div>
+              </div>
+              <div class="content-item">
+                <img src="./img/point.svg" alt="">
+                <div class="content-item-box">
+                  <span class="title">Znajdujemy się:</span>
+                  <div>
+                    03-392, Warszawa <br>
+                    ul. Łojewska 5 <br>
+                    NIP: 5252928224 <br>
+                    REGON: 523428799
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="contacts__box-item">
+            <img src="./img/map.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__top">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="./img/logo.svg" alt="">
+          </a>
+          <ul class="">
+            <li><a href="">O nas</a></li>
+            <li><a href="">Gwarancja</a></li>
+            <li><a href="">Konserwacja</a></li>
+            <li><a href="">Realizacje</a></li>
+            <li><a href="">Jak pracujemy</a></li>
+            <li><a href="">Kontakt</a></li>
+          </ul>
+          <div class="footer__top-contact">
+            <div class="footer__top-item">
+              <img src="./img/phone.svg" alt="">
+              <a href="tel:+48 516 148 288">+48 516 148 288</a>
+            </div>
+            <a href="#" class="btn">Zamów wycenę</a>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="footer__bottom">
+      <div class="container">
+        <span class="copyright">© 2025.All rights reserved</span>
+        <div class="footer__bottom-social">
+          <a href="">
+            <img src="./img/fb.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./img/instagram.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./img/youtube.svg" alt="">
+          </a>
+        </div>
+        <span>Warunki użytkowania i polityka prywatności</span>
+      </div>
+    </section>
+  </footer>
+
+  <div class="modal modal_zamove">
+    <a href="#" class="close"><img src="./img/close.svg" alt=""></a>
+    <h2>Zamów wycenę</h2>
+    <p>Chcesz mieć nie tylko dobrze pomalowane wnętrze, ale też doświadczenie udanej współpracy w przyjaznej atmosferze?</p>
+    <form action="">
+      <input type="text" placeholder="Telefon">
+      <input type="text" placeholder="Adres email">
+      <textarea name="" id="" placeholder="Co należy pomalować?"></textarea>
+      <button type="submit" class="btn">Zamów bezpłatną wycenę</button>
+    </form>
+    <div class="modal__contact">
+      <h3>Kontakty „Dobrego Malarza”</h3>
+      <div class="contact__area">
+        <img src="./img/phone.svg" alt="">
+        <a href="tel:+48 516 148 288">+48 516 148 288</a>
+      </div>
+      <div class="contact__area">
+        <img src="./img/mail.svg" alt="">
+        <a href="mailto:biuro@dobrymalarz.pl">biuro@dobrymalarz.pl</a>
+      </div>
+      <div class="contact__area">
+        <img src="./img/point.svg" alt="">
+        <div class="content__area-box">
+          03-392, Warszawa <br>
+          ul. Łojewska 5 <br>
+          NIP: 5252928224 <br>
+          REGON: 523428799
+          <div class="contact__area-social">
+            <a href="/"><img src="./img/fb.svg" alt=""></a>
+            <a href="/"><img src="./img/instagram.svg" alt=""></a>
+            <a href="/"><img src="./img/youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <a href="#" class="arrow_up">
+    <img src="./img/arrow-up.svg" alt="">
+  </a>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/js.js"></script>
+</body>

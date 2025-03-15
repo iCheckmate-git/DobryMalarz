@@ -1,4 +1,5 @@
 @use 'helpers' as *;
+@use 'blocks' as *;
 
 html {
   &.is-lock {
@@ -7,112 +8,115 @@ html {
 }
 
 body {
-  @include fluid-text(18, 14);
-
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-family-base);
-  letter-spacing: -0.03em;
-  color: var(--color-gray-50);
-  background-color: var(--color-dark);
-}
-
-main {
-  flex-grow: 1;
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  color: var(--color-light);
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3 {
-  font-family: var(--font-family-accent);
-  font-weight: 500;
-}
-
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-weight: 600;
-}
-
-h1, .h1 {
-  @include fluid-text(70, 30);
-
-  line-height: 1.2;
-}
-
-h2, .h2 {
-  @include fluid-text(58, 28);
-
-  line-height: 1.3;
-}
-
-h3, .h3 {
-  @include fluid-text(40, 24);
-}
-
-h4, .h4 {
-  @include fluid-text(26, 18);
-}
-
-h5, .h5 {
-  @include fluid-text(24, 18);
-}
-
-h6, .h6 {
-  @include fluid-text(20, 16);
-}
-
-p {
-  --paragraphMarginBottom: #{rem(24)};
-}
-
-a,
-button,
-label,
-input,
-textarea,
-select,
-svg * {
-  transition-duration: var(--transition-duration);
+  font-family: var(--font-family);
+  font-weight: 400;
+  @include fluid-text(20, 14);
+  line-height: 1.5;
+  color: var(--border);
 }
 
 a {
-  color: inherit;
+  text-decoration: none;
+}
 
-  @include hover {
-    color: var(--color-accent);
-  }
+.btn {
+  background: var(--accent-red);
+  border-radius: 60px;
+  color: var(--typography-white) !important;
+  min-width: 211px;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  line-height: 1.2;
+  font-weight: 700;
+  @include fluid-text(24, 18);
+}
 
-  &[class] {
-    text-decoration: none;
+h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  @include fluid-text(60, 21);
+  line-height: 108%;
+  color: var(--border);
+}
+
+span.subtitle{
+  font-family: var(--font-family);
+  font-weight: 400;
+  @include fluid-text(30, 18);
+  line-height: 120%;
+  color: var(--border);
+}
+
+span.blue {
+  color: var(--typography-blue);
+}
+
+.container {
+  max-width: fluid(1440, 320);
+  width: 100%;
+  display: block;
+  margin: auto;
+  @include tablet {
+    max-width: 100%;
+    padding: 0 23px;
   }
 }
 
-:focus-visible {
-  outline: rem(2) dashed var(--color-light);
-  outline-offset: rem(4);
-  transition-duration: 0s !important;
+a {
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    opacity: .5;
+    transition: .3s ease-in;
+  }
 }
 
-a,
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+.arrow_up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--accent-red);
+  width: rem(98);
+  height: rem(98);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-width: 29px;
+  }
+}
+
+input,
+textarea {
+  border-radius: 50px;
+  padding: rem(23) rem(30);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--typography-grey);
+  border: 0;
+  width: 100%;
+}
+input {
+  max-height: rem(60);
+}
+textarea {
+  max-height: rem(100);
+}
+input[type="submit"],
 button {
-  &[aria-label] {
-    position: relative;
-
-    &::before {
-      @include abs-center;
-      @include square(rem(44));
-
-      content: '';
-    }
-  }
+  border: 0;
+  max-width: unset;
+  width: 100%;
 }
